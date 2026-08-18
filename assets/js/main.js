@@ -7,7 +7,6 @@
   /* ---------- Config: adjust these for production ---------- */
   var CONFIG = {
     email: "info@marstersdigital.com",
-    phone: "07528 137 987",
     subjectPrefix: "New enquiry via marstersdigital.com"
   };
 
