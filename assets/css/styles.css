@@ -65,6 +65,18 @@ body::after {
   pointer-events: none;
 }
 
+/* Floating brand watermark — bottom right of every page */
+.brand-watermark {
+  position: fixed;
+  right: 24px;
+  bottom: 20px;
+  width: 96px;
+  z-index: 50;
+  opacity: 0.85;
+  pointer-events: none;
+  user-select: none;
+}
+
 img { max-width: 100%; display: block; }
 a { color: var(--accent-2); text-decoration: none; }
 button { font-family: inherit; }
