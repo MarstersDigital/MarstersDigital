@@ -218,6 +218,11 @@ h3 { font-size: 1.25rem; }
 
 .nav-cta { margin-left: 0.75rem; padding: 0.6rem 1.3rem; font-size: 0.9rem; }
 
+/* Ensure the nav CTA text stays dark on the gradient
+   (override .nav-links a's gray color) */
+.nav-links .btn-primary,
+.nav-links .btn-primary:hover { color: #06121a; }
+
 .nav-toggle {
   display: none;
   background: none;
