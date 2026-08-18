@@ -1,0 +1,12 @@
+{
+  "name": "marsters-digital",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Marsters Digital — static marketing site",
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
