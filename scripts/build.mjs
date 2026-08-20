@@ -11,10 +11,8 @@ const DIST = join(ROOT, "dist");
 const ITEMS = [
   "index.html",
   "services.html",
-  "work.html",
   "about.html",
   "contact.html",
-  "work",
   "assets",
   "Images"
 ];

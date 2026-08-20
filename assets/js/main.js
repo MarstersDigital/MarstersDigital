@@ -14,7 +14,6 @@
     initNav();
     initReveal();
     initYear();
-    initFilters();
     initContactForm();
   });
 
@@ -63,25 +62,6 @@
   function initYear() {
     var el = document.querySelector("[data-year]");
     if (el) el.textContent = new Date().getFullYear();
-  }
-
-  /* ---------- Portfolio filters ---------- */
-  function initFilters() {
-    var buttons = document.querySelectorAll("[data-filter]");
-    if (!buttons.length) return;
-
-    buttons.forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        var filter = btn.getAttribute("data-filter");
-        buttons.forEach(function (b) { b.classList.remove("active"); });
-        btn.classList.add("active");
-
-        document.querySelectorAll("[data-category]").forEach(function (item) {
-          var match = filter === "all" || item.getAttribute("data-category").indexOf(filter) !== -1;
-          item.classList.toggle("hidden", !match);
-        });
-      });
-    });
   }
 
   /* ---------- Contact form (§5) ---------- */

@@ -15,12 +15,6 @@
        <priority>0.6400</priority>
   </url>
   <url>
-       <loc>https://marstersdigital.com/work</loc>
-       <lastmod>2026-08-19T08:26:15+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
        <loc>https://marstersdigital.com/about</loc>
        <lastmod>2026-08-19T08:26:15+00:00</lastmod>
        <changefreq>daily</changefreq>
@@ -31,41 +25,5 @@
        <lastmod>2026-08-19T08:26:15+00:00</lastmod>
        <changefreq>daily</changefreq>
        <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://marstersdigital.com/work/harbour-coffee</loc>
-       <lastmod>2026-08-19T08:26:15+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://marstersdigital.com/work/northline-legal</loc>
-       <lastmod>2026-08-19T08:26:15+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://marstersdigital.com/work/atlas-fitness</loc>
-       <lastmod>2026-08-19T08:26:15+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://marstersdigital.com/work/greenway-dental</loc>
-       <lastmod>2026-08-19T08:26:15+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.4096</priority>
-  </url>
-  <url>
-       <loc>https://marstersdigital.com/work/little-bakery</loc>
-       <lastmod>2026-08-19T08:26:15+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.4096</priority>
-  </url>
-  <url>
-       <loc>https://marstersdigital.com/work/crestway</loc>
-       <lastmod>2026-08-19T08:26:15+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.4096</priority>
   </url>
 </urlset>
