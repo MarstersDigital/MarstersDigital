@@ -14,12 +14,90 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Marsters Digital",
-    "description": "Bespoke web design & development, branding, managed hosting and IT consulting.",
-    "url": "https://marstersdigital.com",
-    "email": "info@marstersdigital.com",
-    "priceRange": "££"
+    "@graph": [
+      {
+        "@type": ["ProfessionalService", "LocalBusiness"],
+        "@id": "https://marstersdigital.com/#business",
+        "name": "Marsters Digital",
+        "url": "https://marstersdigital.com/",
+        "logo": "https://marstersdigital.com/logo.png",
+        "image": "https://marstersdigital.com/og-image.png",
+        "description": "Bespoke web design, brand identity, managed cloud hosting, and IT consulting.",
+        "email": "info@marstersdigital.com",
+        "priceRange": "££",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Otley",
+          "addressRegion": "West Yorkshire",
+          "addressCountry": "GB"
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Otley"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "West Yorkshire"
+          },
+          {
+            "@type": "City",
+            "name": "Leeds"
+          },
+          {
+            "@type": "Country",
+            "name": "United Kingdom"
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Digital & Technical Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Web Design & Development",
+                "description": "Landing pages, multi-page platforms, and Shopify stores built without bloated templates."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Brand & Logo Identity",
+                "description": "Logo suites, vector assets, colour palettes, and full brand guideline kits."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Managed Hosting & Care",
+                "description": "Fast cloud hosting, SSL, automated backups, and inclusive monthly maintenance edits."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "IT & Technical Consulting",
+                "description": "Business email, domain management, software migrations, and technical troubleshooting."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://marstersdigital.com/#website",
+        "url": "https://marstersdigital.com/",
+        "name": "Marsters Digital",
+        "publisher": {
+          "@id": "https://marstersdigital.com/#business"
+        }
+      }
+    ]
   }
   </script>
 <!-- Google tag (gtag.js) -->
