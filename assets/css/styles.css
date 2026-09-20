@@ -283,8 +283,21 @@ h3 { font-size: 1.25rem; }
 }
 .chip svg { color: var(--accent-2); flex-shrink: 0; }
 
-/* Hero visual — glass card mockup */
-.hero-visual { position: relative; }
+/* Hero visual */
+.hero-visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  max-width: 560px;
+  display: block;
+  filter: drop-shadow(0 20px 40px rgba(13, 148, 136, 0.15));
+}
 
 .glass-card {
   background: rgba(255, 255, 255, 0.9);
