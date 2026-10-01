@@ -529,7 +529,7 @@ h3 { font-size: 1.25rem; }
   overflow: hidden;
   background: var(--surface-2);
   border-bottom: 1px solid var(--border);
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 1024 / 521;
   text-decoration: none;
 }
 
@@ -996,7 +996,7 @@ input:focus, select:focus, textarea:focus {
 #recent-work .top-4 { top: 1rem; }
 #recent-work .bottom-4 { bottom: 1rem; }
 #recent-work .right-4 { right: 1rem; }
-#recent-work .aspect-video { aspect-ratio: 16 / 10; }
+#recent-work .aspect-video { aspect-ratio: 1024 / 521; }
 #recent-work .w-full { width: 100%; }
 #recent-work .h-full { height: 100%; }
 #recent-work .object-cover { object-fit: cover; }
