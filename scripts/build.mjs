@@ -19,6 +19,7 @@ const ITEMS = [
   "contact.html",
   "portfolio.html",
   "sitemap.xml",
+  "robots.txt",
   "assets",
   "Images"
 ];
