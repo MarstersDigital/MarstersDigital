@@ -299,6 +299,80 @@ h3 { font-size: 1.25rem; }
   filter: drop-shadow(0 20px 40px rgba(13, 148, 136, 0.15));
 }
 
+/* Hero founder floating badge */
+.hero-founder-badge {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 28px -4px rgba(15, 23, 42, 0.12), 0 4px 12px -2px rgba(15, 23, 42, 0.06);
+  padding: 0.45rem 1.15rem 0.45rem 0.5rem;
+  border-radius: 9999px;
+  z-index: 2;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hero-founder-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px -4px rgba(15, 23, 42, 0.16);
+}
+
+.founder-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 33% 48%;
+  flex-shrink: 0;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.12);
+  display: block;
+}
+
+.founder-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.founder-name {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--heading);
+  letter-spacing: -0.01em;
+}
+
+.founder-role {
+  font-size: 0.76rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  .hero-founder-badge {
+    bottom: 0.5rem;
+    left: 0.5rem;
+    padding: 0.35rem 0.85rem 0.35rem 0.4rem;
+    gap: 0.55rem;
+  }
+  .founder-avatar {
+    width: 40px;
+    height: 40px;
+  }
+  .founder-name {
+    font-size: 0.85rem;
+  }
+  .founder-role {
+    font-size: 0.72rem;
+  }
+}
+
 .glass-card {
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid var(--border);
@@ -454,6 +528,70 @@ h3 { font-size: 1.25rem; }
 .stat-card { text-align: center; padding: 2rem 1.5rem; }
 .stat-card .stat { font-size: 2.4rem; font-weight: 800; background: var(--gradient-accent); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .stat-card p { font-size: 0.9rem; margin-top: 0.35rem; }
+
+/* Founder portrait card (About page) */
+.philosophy-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.founder-portrait-card {
+  padding: 0;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.founder-portrait-card:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.08);
+}
+
+.founder-portrait-media {
+  width: 100%;
+  height: 290px;
+  overflow: hidden;
+  background: var(--surface-2);
+}
+
+.founder-portrait-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 33% 48%;
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.founder-portrait-card:hover .founder-portrait-media img {
+  transform: scale(1.03);
+}
+
+.founder-portrait-caption {
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  background: #FFFFFF;
+  border-top: 1px solid var(--border);
+}
+
+.founder-portrait-caption strong {
+  font-size: 1.02rem;
+  color: var(--heading);
+  font-weight: 700;
+}
+
+.founder-portrait-caption span {
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-weight: 500;
+}
 
 /* ---------- CTA band ---------- */
 .cta-band {
@@ -811,8 +949,8 @@ input:focus, select:focus, textarea:focus {
 .footer-col h4 { font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--heading); margin-bottom: 1rem; }
 .footer-col ul { list-style: none; display: grid; gap: 0.6rem; }
 .footer-col a { color: var(--body); font-size: 0.9rem; transition: color 0.2s; }
-.footer-col a:hover { color: var(--accent-2); }
-.footer-col .footer-location { color: var(--muted); font-size: 0.88rem; line-height: 1.4; }
+.footer-col .footer-location { color: var(--body); font-size: 0.88rem; font-weight: 500; }
+.footer-col .footer-coverage { color: var(--muted); font-size: 0.82rem; line-height: 1.35; margin-top: 0.1rem; }
 .footer-bottom { border-top: 1px solid var(--border); padding-top: 1.5rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; font-size: 0.82rem; color: var(--muted); }
 
 /* ---------- Reveal animation ---------- */
