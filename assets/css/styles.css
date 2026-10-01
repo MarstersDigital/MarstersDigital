@@ -994,6 +994,7 @@ input:focus, select:focus, textarea:focus {
 #recent-work .relative { position: relative; }
 #recent-work .absolute { position: absolute; }
 #recent-work .top-4 { top: 1rem; }
+#recent-work .bottom-4 { bottom: 1rem; }
 #recent-work .right-4 { right: 1rem; }
 #recent-work .aspect-video { aspect-ratio: 16 / 10; }
 #recent-work .w-full { width: 100%; }
