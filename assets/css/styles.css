@@ -438,10 +438,11 @@ h3 { font-size: 1.25rem; }
 
 /* ---------- Trust / values banner ---------- */
 .trust-banner {
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  background: #FFFFFF;
-  padding: 1.75rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(2, 132, 199, 0.2);
+  background: var(--gradient-accent);
+  padding: 1.85rem 0;
+  box-shadow: 0 4px 20px rgba(13, 148, 136, 0.12);
 }
 .trust-grid {
   display: grid;
@@ -455,12 +456,13 @@ h3 { font-size: 1.25rem; }
   display: grid;
   place-items: center;
   border-radius: 12px;
-  border: 1px solid var(--border);
-  background: var(--surface-2);
-  color: var(--accent-2);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.18);
+  color: #FFFFFF;
+  backdrop-filter: blur(8px);
 }
-.trust-item strong { display: block; color: var(--heading); font-size: 0.95rem; margin-bottom: 0.15rem; }
-.trust-item span { font-size: 0.85rem; }
+.trust-item strong { display: block; color: #FFFFFF; font-size: 0.95rem; margin-bottom: 0.15rem; font-weight: 700; }
+.trust-item span { font-size: 0.85rem; color: rgba(255, 255, 255, 0.92); }
 
 /* ---------- Cards ---------- */
 .card {
