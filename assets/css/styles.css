@@ -1078,12 +1078,6 @@ input:focus, select:focus, textarea:focus {
   box-shadow: 0 4px 14px rgba(13, 148, 136, 0.6);
 }
 
-/* Adjust brand watermark position to accommodate contact dock */
-.brand-watermark {
-  bottom: 84px !important;
-  opacity: 0.22 !important;
-}
-
 /* ============================================================
    FEATURE 2: HERO SECTION 3D DRAGGABLE GLOBE
    ============================================================ */
@@ -1113,7 +1107,7 @@ input:focus, select:focus, textarea:focus {
   align-items: center;
   justify-content: center;
   transform-style: preserve-3d;
-  transform: translateY(-28px);
+  transform: translateY(-68px);
 }
 .hero-globe-sphere {
   position: relative;
@@ -1157,7 +1151,7 @@ input:focus, select:focus, textarea:focus {
 }
 .globe-caption {
   position: absolute;
-  bottom: -32px;
+  bottom: -4px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -2003,85 +1997,44 @@ input:focus, select:focus, textarea:focus {
 }
 
 /* ============================================================
-   FEATURE 8: STICKY MULTI-CHANNEL CONTACT DOCK
+   FEATURE 8: STICKY WHATSAPP ACTION BUTTON (NEXT TO THE M)
    ============================================================ */
 .sticky-contact-dock {
   position: fixed;
-  right: 20px;
-  bottom: 20px;
+  right: 132px;
+  bottom: 36px;
   z-index: 80;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
   user-select: none;
 }
-.dock-status-pill {
+.dock-btn-whatsapp {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.4rem 0.95rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.96);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--border);
-  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--heading);
-  pointer-events: none;
-}
-.dock-status-pulse {
-  width: 8px;
-  height: 8px;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background: #10B981;
-  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
-  animation: pulseDockGreen 2s infinite;
-}
-@keyframes pulseDockGreen {
-  0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
-  70% { box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
-}
-.dock-button-group {
-  display: flex;
-  gap: 0.6rem;
-}
-.dock-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.7rem 1.25rem;
-  border-radius: 999px;
-  font-weight: 600;
-  font-size: 0.88rem;
-  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.16);
-  transition: transform 0.2s, box-shadow 0.2s;
+  background: #25D366;
+  color: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
   cursor: pointer;
   border: none;
   text-decoration: none;
-}
-.dock-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.22);
-}
-.dock-btn-whatsapp {
-  background: #25D366;
-  color: #FFFFFF;
+  padding: 0;
 }
 .dock-btn-whatsapp:hover {
   background: #20BA5A;
   color: #FFFFFF;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.5);
 }
-.dock-btn-email {
-  background: var(--gradient-accent);
-  color: #FFFFFF;
-}
-.dock-btn-email:hover {
-  filter: brightness(1.08);
-  color: #FFFFFF;
+.dock-btn-whatsapp svg {
+  width: 24px;
+  height: 24px;
+  display: block;
 }
 
 /* ============================================================
@@ -2104,10 +2057,10 @@ input:focus, select:focus, textarea:focus {
   .preview-header-left, .preview-header-center, .preview-header-right { justify-content: space-between; }
   .viewport-switcher { width: 100%; justify-content: center; }
   .viewport-btn { flex: 1; justify-content: center; }
-  .sticky-contact-dock { right: 12px; bottom: 12px; }
-  .dock-status-pill { font-size: 0.72rem; padding: 0.3rem 0.75rem; }
-  .dock-btn { padding: 0.6rem 0.95rem; font-size: 0.8rem; }
-  .dock-btn span { display: none; }
+  .brand-watermark { right: 16px; bottom: 16px; width: 68px; opacity: 0.28; }
+  .sticky-contact-dock { right: 94px; bottom: 26px; }
+  .dock-btn-whatsapp { width: 40px; height: 40px; }
+  .dock-btn-whatsapp svg { width: 22px; height: 22px; }
 }
 
 
