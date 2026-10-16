@@ -1,11 +1,12 @@
 # Cloudflare Pages 301 Redirect Rules
-# Enforce canonical www domain and strip .html extensions
+# Strip .html extensions to canonical extensionless routes
 
-# 1. Apex to www domain canonicalization
-https://marstersdigital.com/* https://www.marstersdigital.com/:splat 301!
-http://marstersdigital.com/* https://www.marstersdigital.com/:splat 301!
-http://www.marstersdigital.com/* https://www.marstersdigital.com/:splat 301!
-
-# 2. Strip .html extensions
 /index.html / 301
-/*.html /:splat 301
+/services.html /services 301
+/web-design.html /web-design 301
+/brand-identity.html /brand-identity 301
+/managed-hosting.html /managed-hosting 301
+/it-consulting.html /it-consulting 301
+/portfolio.html /portfolio 301
+/about.html /about 301
+/contact.html /contact 301
