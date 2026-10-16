@@ -85,7 +85,7 @@ export async function onRequestPost(context) {
     // Determine subject & form title
     const isConcept = formType === 'free-concept';
     const subject = isConcept
-      ? `New Free Homepage Concept Request: ${business ? business : name}`
+      ? `New Free Homepage Design Request: ${business ? business : name}`
       : `New Website Enquiry: ${name}${business ? ` (${business})` : ''}`;
 
     // Process logo attachment if present
@@ -149,7 +149,7 @@ export async function onRequestPost(context) {
 <body>
   <div class="container">
     <div class="header">
-      <div class="badge">${escapeHtml(isConcept ? 'Free Homepage Concept Request' : 'Standard Website Enquiry')}</div>
+      <div class="badge">${escapeHtml(isConcept ? 'Free Homepage Design Request' : 'Standard Website Enquiry')}</div>
       <h1>${escapeHtml(isConcept ? (business || name) : name)}</h1>
       <p>Submitted via marstersdigital.com</p>
     </div>

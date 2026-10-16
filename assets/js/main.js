@@ -1,7 +1,7 @@
 /* ============================================================
    Marsters Digital — Main JavaScript Engine
    Features: 3D Website Globe, Multi-Row Showcase, Interactive
-   Full-Page Preview Modal, Free Concept Intake Form & Cloudflare API
+   Full-Page Preview Modal, Free Design Intake Form & Cloudflare API
    ============================================================ */
 
 (function () {
@@ -22,7 +22,7 @@
    * Centralised 8-Item Portfolio Array (Strictly 8 genuine project examples — no duplicates)
    * CRITICAL BUSINESS RULE:
    * Only Harrogate Jagwar Specialists and Ellavate Dogs may display liveUrl.
-   * All other bespoke industry concepts must set liveUrl: null.
+   * All other bespoke industry designs must set liveUrl: null.
    */
   var PORTFOLIO_ITEMS = [
     {
@@ -58,19 +58,19 @@
       fullImg: "assets/portfolio/established-home-improvements-full.png",
       mobileImg: "assets/portfolio/Established-Home-Improvements-mobile.png",
       liveUrl: null,
-      displayUrl: "https://establishedhomeimprovements.co.uk (Concept)",
+      displayUrl: "https://establishedhomeimprovements.co.uk (Design)",
       tags: ["High-Converting Quotes", "Project Gallery", "Mobile First"]
     },
     {
       id: "fliss-and-ivy",
       name: "Fliss & Ivy Floral Design",
       industry: "Bespoke Floristry & Botanical Styling • Yorkshire",
-      description: "Editorial-grade floral studio concept showcasing wedding installations, seasonal collections, and bespoke booking funnels.",
+      description: "Editorial-grade floral studio design showcasing wedding installations, seasonal collections, and bespoke booking funnels.",
       heroImg: "assets/portfolio/fliss-&-ivy-hero.png",
       fullImg: "assets/portfolio/fliss-&-ivy-full.png",
       mobileImg: "assets/portfolio/fliss-&-ivy-mobile.png",
       liveUrl: null,
-      displayUrl: "https://flissandivy.co.uk (Concept)",
+      displayUrl: "https://flissandivy.co.uk (Design)",
       tags: ["Editorial Aesthetic", "Wedding Booking Funnel", "High Res Media"]
     },
     {
@@ -82,7 +82,7 @@
       fullImg: "assets/portfolio/halo-hair-design-full.png",
       mobileImg: "assets/portfolio/halo-hair-design-mobile.png",
       liveUrl: null,
-      displayUrl: "https://halohairdesign.co.uk (Concept)",
+      displayUrl: "https://halohairdesign.co.uk (Design)",
       tags: ["Boutique Aesthetic", "Service Menu", "Fast Booking"]
     },
     {
@@ -94,7 +94,7 @@
       fullImg: "assets/portfolio/skyrise-contractors-full.png",
       mobileImg: "assets/portfolio/skyrise-contractors-mobile.png",
       liveUrl: null,
-      displayUrl: "https://skyrisecontractors.co.uk (Concept)",
+      displayUrl: "https://skyrisecontractors.co.uk (Design)",
       tags: ["Commercial Tender Ready", "Safety Accreditations", "Instant RFQ"]
     },
     {
@@ -106,7 +106,7 @@
       fullImg: "assets/portfolio/the-eden-pack-full.png",
       mobileImg: "assets/portfolio/the-eden-pack-mobile.png",
       liveUrl: null,
-      displayUrl: "https://theedenpack.co.uk (Concept)",
+      displayUrl: "https://theedenpack.co.uk (Design)",
       tags: ["Pack Adventures", "Pet Photography", "Canine Sanctuary"]
     },
     {
@@ -118,7 +118,7 @@
       fullImg: "assets/portfolio/the-hive-property-group-full.png",
       mobileImg: "assets/portfolio/the-hive-property-group-mobile.png",
       liveUrl: null,
-      displayUrl: "https://thehivepropertygroup.co.uk (Concept)",
+      displayUrl: "https://thehivepropertygroup.co.uk (Design)",
       tags: ["Bespoke Kitchens", "Luxury Bathrooms", "Transformation Sliders"]
     }
   ];
@@ -478,7 +478,7 @@
       });
     });
 
-    // "Get a Free Concept Like This" CTA in modal header
+    // "Get a Free Design Like This" CTA in modal header
     if (conceptCta) {
       conceptCta.addEventListener("click", function () {
         var refName = currentActiveProject ? currentActiveProject.name : "Website Showcase Style";
@@ -531,7 +531,7 @@
     /**
      * CRITICAL BUSINESS RULE:
      * Only Harrogate Jagwar Specialists and Ellavate Dogs may display liveUrl.
-     * For all other concept sites, liveUrl is null and this button is hidden.
+     * For all other design sites, liveUrl is null and this button is hidden.
      */
     if (liveLink) {
       if (project.liveUrl) {
@@ -684,7 +684,7 @@
         }
 
         if (!emailInput.value.includes("@") || !emailInput.value.includes(".")) {
-          showStatus("error", "Please provide a valid email address so Elliot can send your concept.");
+          showStatus("error", "Please provide a valid email address so Elliot can send your design.");
           return;
         }
 
@@ -706,7 +706,7 @@
 
           if (response.ok && result.ok) {
             form.style.display = "none";
-            showStatus("success", "Homepage Concept Request Received!", "Thank you " + nameInput.value.trim() + "! Elliot will review your brand details and begin preparing your bespoke homepage concept. We'll be in touch within 24 hours.");
+            showStatus("success", "Homepage Design Request Received!", "Thank you " + nameInput.value.trim() + "! Elliot will review your brand details and begin preparing your bespoke homepage design. We'll be in touch within 24 hours.");
           } else {
             throw new Error(result.error || "Submission failed");
           }
