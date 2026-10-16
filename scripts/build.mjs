@@ -21,7 +21,8 @@ const ITEMS = [
   "sitemap.xml",
   "robots.txt",
   "assets",
-  "Images"
+  "Images",
+  "functions"
 ];
 
 try {

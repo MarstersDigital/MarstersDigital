@@ -58,7 +58,7 @@
               "itemOffered": {
                 "@type": "Service",
                 "name": "Web Design & Development",
-                "description": "Landing pages, multi-page platforms, and Shopify stores built without bloated templates."
+                "description": "Bespoke landing pages and multi-page platforms engineered for speed, mobile elegance, and conversion."
               }
             },
             {
@@ -74,7 +74,7 @@
               "itemOffered": {
                 "@type": "Service",
                 "name": "Managed Hosting & Care",
-                "description": "Fast cloud hosting, SSL, automated backups, and inclusive monthly maintenance edits."
+                "description": "Fast UK edge hosting from £20/mo, or £30/mo with 30 minutes of monthly edits included."
               }
             },
             {
@@ -113,6 +113,17 @@
 </head>
 <body>
 
+  <!-- ===== Feature 1: Top Announcement Bar ===== -->
+  <div class="top-announcement-bar">
+    <div class="top-announcement-container">
+      <span class="announcement-badge">See It First</span>
+      <span class="top-announcement-text">See your new website before you pay a penny — Request a free bespoke homepage concept for your business.</span>
+      <button type="button" class="top-announcement-btn" data-open-concept data-reference-style="Announcement Bar">
+        Get My Free Concept &rarr;
+      </button>
+    </div>
+  </div>
+
   <div class="brand-watermark" aria-hidden="true">
     <img src="assets/images/logo-mark.png" alt="">
   </div>
@@ -145,10 +156,14 @@
         <h1>Websites built around <span class="gradient-text">your business</span>, not a template.</h1>
         <p class="lead">Based in Otley, we design, build and look after bespoke digital experiences for independent businesses across Wharfedale and Yorkshire — with direct 1-on-1 collaboration from day one.</p>
         <div class="hero-ctas">
-          <a class="btn btn-primary" href="contact.html">Start Your Project
+          <button type="button" class="btn btn-primary" data-open-concept data-reference-style="Hero Section CTA">
+            Request Free Concept
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </button>
+          <a class="btn btn-secondary" href="#portfolio-showcase">
+            Explore Portfolio
           </a>
-          </div>
+        </div>
         <div class="hero-badges">
           <span class="chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>100% Bespoke Builds</span>
           <span class="chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Dedicated Account Manager</span>
@@ -156,13 +171,26 @@
         </div>
       </div>
 
+      <!-- Feature 2: Interactive 3D Draggable Website Globe & Elliot Badge -->
       <div class="hero-visual reveal">
-        <img src="assets/images/laptop-image.png" alt="Bespoke website design and digital solutions by Marsters Digital" class="hero-image" width="1536" height="1542" fetchpriority="high" decoding="async">
-        <div class="hero-founder-badge">
-          <img src="assets/images/elliot-marsters.jpg" alt="Elliot Marsters — Marsters Digital" class="founder-avatar" width="104" height="104" loading="eager">
-          <div class="founder-info">
-            <span class="founder-name">Elliot Marsters</span>
+        <div id="heroGlobeWrap" class="hero-globe-wrap" aria-label="Interactive 3D Website Portfolio Globe">
+          <div class="hero-globe-stage">
+            <div id="heroGlobeSphere" class="hero-globe-sphere"></div>
           </div>
+        </div>
+
+        <div class="hero-founder-badge">
+          <img src="assets/images/elliot-marsters.jpg" alt="Elliot — Dedicated Account Manager" class="founder-avatar" width="88" height="88" loading="eager">
+          <div class="founder-info">
+            <span class="founder-name">Elliot</span>
+            <span class="founder-role">Dedicated Account Manager</span>
+            <span class="founder-subtext">1-on-1 collaboration from Otley &bull; No call centre queues</span>
+          </div>
+        </div>
+
+        <div class="globe-caption">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          <span>Drag to spin the globe &bull; Click any website to explore full page</span>
         </div>
       </div>
     </div>
@@ -206,7 +234,7 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg>
           </div>
           <h3>Web Design &amp; Development</h3>
-          <p>Landing pages, multi-page platforms and Shopify stores engineered for speed and conversion.</p>
+          <p>Bespoke landing pages and multi-page business websites engineered for speed, mobile elegance, and high conversion.</p>
           <span class="card-link">Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </a>
         <a class="card reveal" data-delay="1" href="brand-identity.html">
@@ -214,7 +242,7 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
           </div>
           <h3>Brand &amp; Logo Identity</h3>
-          <p>Logo suites, vector assets, colour palettes and full brand kits.</p>
+          <p>Logo suites, vector assets, colour palettes and complete brand identity kits.</p>
           <span class="card-link">Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </a>
         <a class="card reveal" data-delay="2" href="managed-hosting.html">
@@ -222,7 +250,7 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
           </div>
           <h3>Managed Hosting &amp; Care</h3>
-          <p>Fast cloud hosting, SSL, backups and 30 minutes of monthly edits — included.</p>
+          <p>From £20/mo for static single-page hosting, or £30/mo including 30 minutes of monthly edits.</p>
           <span class="card-link">Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </a>
         <a class="card reveal" data-delay="3" href="it-consulting.html">
@@ -230,80 +258,125 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
           </div>
           <h3>IT &amp; Technical Consulting</h3>
-          <p>Business email, domain management, software migrations and troubleshooting.</p>
+          <p>Business email, domain management, software migrations and technical troubleshooting.</p>
           <span class="card-link">Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ===== Recent Work Showcase ===== -->
-  <section class="section" id="recent-work" style="padding-top: 0;">
+  <!-- ===== Feature 3: Multi-Row Scrolling Website Showcase (Mid-Page) ===== -->
+  <section class="showcase-section" id="portfolio-showcase">
     <div class="container">
-      <div class="section-head" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem; margin-bottom: 2.5rem;">
-        <div>
-          <span class="eyebrow">Recent Work</span>
-          <h2 style="margin-bottom: 0;">Fresh, modern websites built for <span class="gradient-text">local businesses</span></h2>
-        </div>
-        <a class="card-link" href="portfolio.html" style="font-weight: 700; margin: 0;">
-          View full portfolio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
-        </a>
+      <div class="showcase-header reveal">
+        <span class="eyebrow">Interactive Portfolio</span>
+        <h2>This is the standard we build to</h2>
+        <p class="lead" style="margin: 0 auto; max-width: 680px;">Bespoke, high-performance websites designed to make local businesses stand out. Click any website below to open and scroll the full page from top to bottom.</p>
+      </div>
+    </div>
+
+    <div class="showcase-marquee-wrap" id="showcaseMarqueeWrap">
+      <!-- Row 1: Leftward scroll (Projects 1-4) -->
+      <div class="marquee-row">
+        <div class="marquee-track marquee-track-left" id="marqueeRow1"></div>
+      </div>
+      <!-- Row 2: Rightward scroll (Projects 5-8) -->
+      <div class="marquee-row">
+        <div class="marquee-track marquee-track-right" id="marqueeRow2"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Feature 5.1: "See It Before You Pay" On-Page Feature Block ===== -->
+  <section class="section risk-reversal-section" id="see-it-before-you-pay">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Zero Risk Guarantee</span>
+        <h2>See it before you pay for it.</h2>
+        <p class="lead" style="margin: 0 auto; max-width: 680px;">Nobody should commit to a new website based on guesswork. Tell us about your business and we will design a bespoke homepage concept for you first — free of charge and with zero obligation.</p>
       </div>
 
-      <div class="portfolio-grid">
-        <!-- Project 1: Harrogate Jagwar -->
-        <article class="portfolio-card reveal" id="harrogate-jagwar">
-          <a class="portfolio-media" href="https://www.harrogatejagwar.co.uk" target="_blank" rel="noopener noreferrer" aria-label="Visit the live Harrogate Jagwar Specialists website">
-            <img src="assets/images/portfolio/harrogatejagwar.png" alt="Harrogate Jagwar Specialists website screenshot" loading="lazy" width="1024" height="521">
-            <span class="portfolio-badge-overlay">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              Visit Live Site
-            </span>
-          </a>
-          <div class="portfolio-body">
-            <span class="portfolio-tag">Jaguar Specialist &bull; Harrogate</span>
-            <h3>
-              <a href="https://www.harrogatejagwar.co.uk" target="_blank" rel="noopener noreferrer">Harrogate Jagwar Specialists</a>
-            </h3>
-            <p>Their old website was dated and using tired photos that didn't reflect their high standards. We gave them a sleek, premium new look that matches their workshop's reputation, making it easy for drivers to find services and get in touch.</p>
-            <div class="portfolio-meta">
-              <span class="chip">Custom Design</span>
-              <span class="chip">Super-Fast on Mobile</span>
-              <span class="chip">Google Friendly</span>
-            </div>
-            <a class="portfolio-link" href="portfolio.html#harrogate-jagwar">
-              <span>View in portfolio</span>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
-            </a>
-          </div>
-        </article>
+      <div class="risk-reversal-grid">
+        <div class="risk-card reveal">
+          <span class="risk-card-number">Highlight 01</span>
+          <h3>Your Homepage Concept, Free</h3>
+          <p>See exactly how your brand will look online before committing a penny. No deposit, no upfront fees, and no obligation.</p>
+        </div>
+        <div class="risk-card reveal" data-delay="1">
+          <span class="risk-card-number">Highlight 02</span>
+          <h3>Tailored Around Your Brand</h3>
+          <p>Share your logo, social pages, and goals so we build something that genuinely fits your business, tone, and ideal customers.</p>
+        </div>
+        <div class="risk-card reveal" data-delay="2">
+          <span class="risk-card-number">Highlight 03</span>
+          <h3>100% Bespoke Code</h3>
+          <p>Engineered from scratch for sub-second speed on mobile and strong Google visibility — never bloated WordPress templates.</p>
+        </div>
+        <div class="risk-card reveal" data-delay="3">
+          <span class="risk-card-number">Highlight 04</span>
+          <h3>Simple Hosting from £20/mo</h3>
+          <p>Transparent upfront build quotes and effortless UK cloud hosting from £20/mo (or £30/mo with 30 mins of monthly edits).</p>
+        </div>
+      </div>
 
-        <!-- Project 2: Ellavate Dogs -->
-        <article class="portfolio-card reveal" id="ellavate-dogs" data-delay="1">
-          <a class="portfolio-media" href="https://www.ellavatedogs.com" target="_blank" rel="noopener noreferrer" aria-label="Visit the live Ellavate Dogs website">
-            <img src="assets/images/portfolio/ellavatedogs.png" alt="Ellavate Dogs website screenshot" loading="lazy" width="1024" height="521">
-            <span class="portfolio-badge-overlay">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              Visit Live Site
-            </span>
-          </a>
-          <div class="portfolio-body">
-            <span class="portfolio-tag">Dog Training &bull; Newcastle</span>
-            <h3>
-              <a href="https://www.ellavatedogs.com" target="_blank" rel="noopener noreferrer">Ellavate Dogs</a>
-            </h3>
-            <p>A friendly, modern website designed to help a professional dog trainer stand out. Clear packages, great photos, and a simple enquiry setup make booking stress-free for busy pet owners.</p>
-            <div class="portfolio-meta">
-              <span class="chip">Custom Design</span>
-              <span class="chip">Clean & Easy to Browse</span>
-              <span class="chip">Simple Enquiries</span>
+      <div style="text-align: center;" class="reveal">
+        <button type="button" class="btn btn-primary" data-open-concept data-reference-style="Homepage Feature Block">
+          Request My Free Homepage Concept
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Feature 6: "Already Have A Website?" Switchover & Migration Section ===== -->
+  <section class="section switchover-section" id="switchover">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">ALREADY HAVE A WEBSITE?</span>
+        <h2>Think switching away from your current website host is complicated? <span class="gradient-text">We do the whole thing for you.</span></h2>
+        <p class="lead">Many business owners stay stuck with outdated websites or overpriced hosting because they worry switching will break their emails, lose their domain name, or cause headaches. As a standard part of our onboarding, we manage the entire switchover for you from start to finish.</p>
+      </div>
+
+      <div class="switchover-grid">
+        <div class="switchover-card reveal">
+          <div class="switchover-step-badge">1</div>
+          <h3>Zero Downtime While We Build</h3>
+          <p>Your current website stays live while we prepare and test everything on a private link. Your customers will experience uninterrupted access until launch day.</p>
+        </div>
+
+        <div class="switchover-card reveal" data-delay="1">
+          <div class="switchover-step-badge">2</div>
+          <h3>We Handle Domains, DNS &amp; Emails</h3>
+          <p>You don't need to touch a technical setting. We coordinate your domain transfer and protect your existing business emails so you never miss a message.</p>
+        </div>
+
+        <div class="switchover-card reveal" data-delay="2">
+          <div class="switchover-step-badge">3</div>
+          <h3>Simple, Transparent Hosting Plans</h3>
+          <div class="hosting-plan-boxes">
+            <div class="hosting-tier-card">
+              <div class="hosting-tier-head">
+                <span class="hosting-tier-name">Essential Static Hosting</span>
+                <span class="hosting-tier-price">&pound;20<small style="font-size: 0.72rem; color: var(--muted); font-weight: 500;">/mo</small></span>
+              </div>
+              <p class="hosting-tier-desc">Ultra-fast Cloudflare edge hosting, SSL security, and backups for single-page static websites.</p>
             </div>
-            <a class="portfolio-link" href="portfolio.html#ellavate-dogs">
-              <span>View in portfolio</span>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
-            </a>
+            <div class="hosting-tier-card pro">
+              <div class="hosting-tier-head">
+                <span class="hosting-tier-name">Managed Care Plan</span>
+                <span class="hosting-tier-price">&pound;30<small style="font-size: 0.72rem; color: var(--muted); font-weight: 500;">/mo</small></span>
+              </div>
+              <p class="hosting-tier-desc">Everything in Essential plus <strong>30 minutes of hands-on content, photo, and page updates every month</strong>.</p>
+            </div>
           </div>
-        </article>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 1rem;" class="reveal">
+        <button type="button" class="btn btn-secondary" data-open-concept data-reference-style="Website Migration Enquiry">
+          Ask About Moving Your Website
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </button>
       </div>
     </div>
   </section>
@@ -356,6 +429,77 @@
     </div>
   </section>
 
+  <!-- ===== Feature 7.2: Plain-English FAQ Accordion ===== -->
+  <section class="section faq-section" id="faq">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Clear Answers</span>
+        <h2>Frequently asked questions</h2>
+        <p class="lead" style="margin: 0 auto; max-width: 620px;">Clear, honest answers about working with Marsters Digital in Otley. No technical jargon, no sales fluff.</p>
+      </div>
+
+      <div class="faq-accordion reveal">
+        <!-- Q1 -->
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span>How does the "See It Before You Pay" free homepage concept work?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>It is completely risk-free. Simply send us your business details, your logo (if you have one), and your social media pages. Elliot will design a bespoke homepage concept tailored around your brand before you commit a single penny. If you love the direction and feel confident, we proceed to build your full website. If not, you walk away with zero obligation and zero cost.</p>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span>I already have a website and domain name &mdash; is it hard to switch over to you?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Not at all &mdash; we handle the entire switchover for you from start to finish. Your existing website remains fully live with zero downtime while we build and test your new website on a secure staging link. We coordinate DNS configuration, domain management, and ensure your business email services (Google Workspace, Microsoft 365, etc.) continue operating seamlessly without missing a message.</p>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span>What does ongoing hosting and care cost?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>We keep pricing transparent and predictable with two clear hosting tiers:<br>
+            &bull; <strong>&pound;20/month (Essential Static Hosting):</strong> High-speed Cloudflare edge hosting, automated SSL encryption certificates, daily off-site backups, and 24/7 uptime monitoring for single-page static sites.<br>
+            &bull; <strong>&pound;30/month (Managed Care Plan):</strong> Everything in Essential plus <strong>30 minutes of inclusive content, photo, and design edits every month</strong> with fast direct turnaround.<br>
+            There are no hidden fees, surprise maintenance bills, or locked contracts.</p>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span>How long does a new website take to go live?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Typically 2 to 4 weeks from the approval of your free homepage concept. Because we code cleanly from blank canvases rather than wrestling with bloated page-builder plugins, development moves swiftly and results in a lightning-fast final build.</p>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span>Will I deal with a call centre or ticket queue after launch?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Never. You have direct 1-on-1 access to Elliot Marsters in Otley via phone, WhatsApp, and email. With an average response time of under 2 hours, you'll never be passed between account managers or left waiting days in a generic support queue.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== CTA ===== -->
   <section class="section" style="padding-top: 0;">
     <div class="container">
@@ -363,7 +507,7 @@
         <h2>Ready to build something <span class="gradient-text">bespoke</span>?</h2>
         <p>Tell us about your project. Your dedicated account manager will reply within 24 hours — with a clear plan and transparent pricing.</p>
         <div class="cta-actions">
-          <a class="btn btn-primary" href="contact.html">Start Your Project</a>
+          <button type="button" class="btn btn-primary" data-open-concept data-reference-style="Bottom CTA Band">Get Your Free Homepage Concept</button>
           <a class="btn btn-secondary" href="services.html">Explore Services</a>
         </div>
       </div>
@@ -413,6 +557,213 @@
       </div>
     </div>
   </footer>
+
+  <!-- ===== Feature 4: Interactive Full-Page Preview Modal ===== -->
+  <div id="previewModal" class="preview-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="previewModalTitle">
+    <div class="preview-modal-backdrop"></div>
+    <div class="preview-modal-shell">
+      <!-- Modal Header Bar -->
+      <header class="preview-modal-header">
+        <div class="preview-header-left">
+          <h3 id="previewModalTitle" class="preview-project-title">Harrogate Jagwar Specialists</h3>
+          <span id="previewModalIndustry" class="preview-industry-pill">Jaguar Specialist &bull; Harrogate</span>
+        </div>
+
+        <div class="preview-header-center">
+          <div class="viewport-switcher" role="tablist" aria-label="Device Viewport Switcher">
+            <button type="button" class="viewport-btn active" data-view="desktop" role="tab" aria-selected="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              <span>Desktop View</span>
+            </button>
+            <button type="button" class="viewport-btn" data-view="mobile" role="tab" aria-selected="false">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+              <span>Mobile View</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="preview-header-right">
+          <button type="button" id="previewConceptCta" class="btn btn-primary" style="padding: 0.55rem 1.25rem; font-size: 0.84rem;">
+            <span>Get a Free Concept Like This</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </button>
+
+          <!-- Conditional Link: ONLY rendered for Harrogate Jagwar and Ellavate Dogs -->
+          <a id="previewLiveLink" class="btn btn-secondary" href="#" target="_blank" rel="noopener noreferrer" style="padding: 0.55rem 1rem; font-size: 0.84rem; display: none;">
+            <span>Visit Live Site</span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+
+          <button type="button" class="preview-modal-close" aria-label="Close preview modal">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Modal Viewport Body -->
+      <div class="preview-modal-body">
+        <div class="preview-viewport-container desktop-mode">
+          <!-- Desktop Realistic Browser Frame -->
+          <div class="browser-window-frame">
+            <div class="browser-window-topbar">
+              <div class="browser-window-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="browser-window-urlbar">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span id="browserUrlText">https://harrogatejagwar.co.uk</span>
+              </div>
+              <div class="browser-window-status">
+                <span class="status-indicator"></span>
+                <span>Bespoke 60fps</span>
+              </div>
+            </div>
+            <div class="browser-window-scrollpane" id="desktopScrollPane">
+              <img id="previewDesktopImg" src="assets/portfolio/harrogatejagwar.co.uk-full.png" alt="Desktop design screenshot" loading="eager">
+            </div>
+          </div>
+
+          <!-- Mobile Phone Frame -->
+          <div class="mobile-phone-frame">
+            <div class="mobile-phone-speaker">
+              <span class="phone-island"></span>
+            </div>
+            <div class="mobile-phone-scrollpane" id="mobileScrollPane">
+              <img id="previewMobileImg" src="assets/portfolio/harrogatejagwar.co.uk-mobile.png" alt="Mobile design screenshot" loading="eager">
+            </div>
+            <div class="mobile-home-indicator"></div>
+          </div>
+        </div>
+
+        <div class="preview-scroll-hint">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+          <span>Scroll to explore full page</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Feature 5.2: Free Homepage Concept Intake Modal ===== -->
+  <div id="conceptModal" class="concept-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="conceptModalTitle">
+    <div class="concept-modal-backdrop"></div>
+    <div class="concept-modal-shell">
+      <div class="concept-modal-header">
+        <h2 id="conceptModalTitle">Request Your Free Homepage Concept</h2>
+        <p>See your new website before you commit a penny &mdash; 100% free with zero obligation.</p>
+        <button type="button" class="concept-modal-close" aria-label="Close modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="concept-modal-body">
+        <div id="conceptReferenceBanner" class="reference-style-banner" style="display: none;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <span id="conceptReferenceText">Preferred style reference: Website Showcase</span>
+        </div>
+
+        <form id="conceptForm" enctype="multipart/form-data" novalidate>
+          <input type="hidden" id="ci-referenceStyle" name="referenceStyle" value="">
+
+          <div class="field">
+            <label for="ci-name">Your Name <span class="req">*</span></label>
+            <input type="text" id="ci-name" name="name" placeholder="Elliot Marsters" autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="ci-business">Business Name <span class="req">*</span></label>
+            <input type="text" id="ci-business" name="business" placeholder="Your Company Name Ltd" autocomplete="organization" required>
+          </div>
+
+          <div class="grid-2" style="gap: 1rem;">
+            <div class="field">
+              <label for="ci-email">Email Address <span class="req">*</span></label>
+              <input type="email" id="ci-email" name="email" placeholder="you@yourcompany.co.uk" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="ci-phone">Phone / WhatsApp Number <span class="req">*</span></label>
+              <input type="tel" id="ci-phone" name="phone" placeholder="+44 7000 000000" autocomplete="tel" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="ci-currentWebsite">Current Website URL <span style="color: var(--muted); font-weight: 400;">(optional)</span></label>
+            <input type="text" id="ci-currentWebsite" name="currentWebsite" placeholder="https:// (Leave blank if you don't have one yet)">
+          </div>
+
+          <div class="field">
+            <label for="ci-socials">Instagram &amp; Facebook Links <span style="color: var(--muted); font-weight: 400;">(Helps us match your brand style, photos &amp; tone)</span></label>
+            <textarea id="ci-socials" name="socials" rows="2" placeholder="e.g. instagram.com/yourbusiness, facebook.com/yourbusiness"></textarea>
+          </div>
+
+          <!-- Logo Drag-and-drop Zone -->
+          <div class="field">
+            <label>Upload Your Company Logo <span style="color: var(--muted); font-weight: 400;">(PNG or JPEG up to 5MB &mdash; so we can build it straight into your concept)</span></label>
+            <div class="logo-dropzone" id="conceptLogoDropzone">
+              <input type="file" id="conceptLogoInput" name="logo" accept="image/png,image/jpeg,image/jpg,image/webp,image/svg+xml">
+              <div class="logo-dropzone-content">
+                <div class="logo-dropzone-icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                </div>
+                <strong>Drag and drop your logo here, or <span style="color: var(--accent-2); text-decoration: underline;">browse files</span></strong>
+                <span style="font-size: 0.78rem; color: var(--muted);">Supports high-res PNG, JPEG, SVG up to 5MB</span>
+              </div>
+            </div>
+
+            <div class="logo-preview-wrap" id="conceptLogoPreview">
+              <img id="conceptLogoThumb" class="logo-preview-thumb" src="" alt="Logo preview">
+              <div class="logo-preview-details">
+                <div id="conceptLogoName" class="logo-preview-name">logo.png</div>
+                <div id="conceptLogoSize" class="logo-preview-size">0 KB</div>
+              </div>
+              <button type="button" class="logo-remove-btn" id="conceptLogoRemove">Remove</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="ci-goals">Tell Us About Your Business &amp; Goals <span class="req">*</span></label>
+            <textarea id="ci-goals" name="message" rows="3" placeholder="What services do you offer, who are your customers, and what kind of look/feel or features would you love on your new site?" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">
+            <span class="spinner" aria-hidden="true"></span>
+            <span class="btn-label">Request My Free Homepage Concept</span>
+          </button>
+
+          <p style="font-size: 0.78rem; color: var(--muted); text-align: center; margin-top: 0.75rem;">
+            100% confidential. No spam, no sales calls, and zero payment obligation.
+          </p>
+        </form>
+
+        <div id="conceptFormStatus" class="form-status" style="display: none; margin-top: 1rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+          <div>
+            <strong class="status-title"></strong><br>
+            <span class="status-text"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Feature 8: Sticky Multi-Channel Contact Dock ===== -->
+  <aside class="sticky-contact-dock" aria-label="Direct Contact Dock">
+    <div class="dock-status-pill">
+      <span class="dock-status-pulse"></span>
+      <span>Talk directly to Elliot &bull; Typically replies in &lt;2h</span>
+    </div>
+    <div class="dock-button-group">
+      <a id="dockWhatsappBtn" class="dock-btn dock-btn-whatsapp" href="https://wa.me/447000000000" target="_blank" rel="noopener noreferrer" aria-label="Chat directly on WhatsApp with Elliot">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 2C6.496 2 2 6.505 2 12.052c0 1.956.558 3.784 1.526 5.341L2.22 22l4.786-1.258a10.02 10.02 0 0 0 5.025 1.362h.005c5.534 0 10.03-4.505 10.03-10.052 0-2.686-1.044-5.21-2.94-7.11A9.99 9.99 0 0 0 12.031 2zm5.86 14.286c-.244.693-1.42 1.332-1.968 1.417-.514.079-1.18.113-1.908-.124-1.218-.396-2.777-1.373-4.062-2.663-1.66-1.665-2.668-3.693-2.983-4.24-.316-.546-.034-.842.238-1.113.243-.244.545-.632.818-.949.273-.316.364-.546.546-.91.182-.364.091-.683-.046-.956-.136-.273-1.229-2.96-1.684-4.054-.442-1.066-.893-.92-1.229-.937-.318-.016-.683-.02-1.047-.02-.365 0-.957.137-1.458.683-.502.547-1.916 1.872-1.916 4.564 0 2.693 1.962 5.295 2.236 5.66.273.364 3.86 5.894 9.351 8.267 1.306.564 2.327.902 3.123 1.155 1.312.417 2.507.358 3.45.218 1.054-.158 3.235-1.321 3.69-2.597.456-1.275.456-2.368.319-2.597-.137-.228-.501-.365-.957-.593z"/></svg>
+        <span>WhatsApp</span>
+      </a>
+      <a id="dockEmailBtn" class="dock-btn dock-btn-email" href="mailto:info@marstersdigital.com" aria-label="Send direct enquiry to info@marstersdigital.com">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+        <span>Email Elliot</span>
+      </a>
+    </div>
+  </aside>
 
   <script src="assets/js/main.js"></script>
 </body>
