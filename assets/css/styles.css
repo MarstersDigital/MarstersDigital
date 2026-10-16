@@ -262,6 +262,10 @@ h3 { font-size: 1.25rem; }
   align-items: center;
 }
 
+.hero-text-col {
+  transform: translateY(-28px);
+}
+
 .hero h1 { margin: 0.5rem 0 1.5rem; }
 .hero p { max-width: 540px; margin-bottom: 2rem; }
 
@@ -970,6 +974,7 @@ input:focus, select:focus, textarea:focus {
 /* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
   .hero-grid, .why-grid, .contact-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+  .hero-text-col { transform: none; }
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .process { grid-template-columns: repeat(2, 1fr); }
@@ -1963,7 +1968,7 @@ input:focus, select:focus, textarea:focus {
 .sticky-contact-dock {
   position: fixed;
   right: 132px;
-  bottom: 36px;
+  bottom: 24px;
   z-index: 80;
   display: flex;
   align-items: center;
@@ -2019,7 +2024,7 @@ input:focus, select:focus, textarea:focus {
   .viewport-switcher { width: 100%; justify-content: center; }
   .viewport-btn { flex: 1; justify-content: center; }
   .brand-watermark { right: 16px; bottom: 16px; width: 68px; opacity: 0.28; }
-  .sticky-contact-dock { right: 94px; bottom: 26px; }
+  .sticky-contact-dock { right: 94px; bottom: 14px; }
   .dock-btn-whatsapp { width: 40px; height: 40px; }
   .dock-btn-whatsapp svg { width: 22px; height: 22px; }
 }
