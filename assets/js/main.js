@@ -11,7 +11,7 @@
      CONFIG & PORTFOLIO DATA (8 SITES × 3 SCREENSHOTS)
      ============================================================ */
   // Dedicated WhatsApp mobile contact number (change here anytime)
-  var WHATSAPP_NUMBER = "447000000000";
+  var WHATSAPP_NUMBER = "447528137987";
 
   var CONFIG = {
     email: "info@marstersdigital.com",
