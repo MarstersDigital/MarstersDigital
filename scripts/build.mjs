@@ -20,6 +20,7 @@ const ITEMS = [
   "portfolio.html",
   "sitemap.xml",
   "robots.txt",
+  "_redirects",
   "assets",
   "Images",
   "functions"

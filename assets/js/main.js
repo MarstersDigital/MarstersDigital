@@ -735,7 +735,7 @@
   function openConceptModal(referenceStyleName) {
     var modal = document.getElementById("conceptModal");
     if (!modal) {
-      window.location.href = "index.html#see-it-before-you-pay";
+      window.location.href = "/#see-it-before-you-pay";
       return;
     }
 

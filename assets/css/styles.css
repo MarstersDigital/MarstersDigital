@@ -267,6 +267,15 @@ h3 { font-size: 1.25rem; }
 }
 
 .hero h1 { margin: 0.5rem 0 1.5rem; }
+.hero-eyebrow {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-2);
+  margin-bottom: 0.65rem;
+}
 .hero p { max-width: 540px; margin-bottom: 2rem; }
 
 .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }

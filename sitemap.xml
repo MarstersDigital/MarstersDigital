@@ -1,59 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-       <loc>https://marstersdigital.com/</loc>
-       <lastmod>2026-08-19T08:26:15+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>1.0000</priority>
-  </url>
-   <url>
-        <loc>https://marstersdigital.com/services</loc>
-        <lastmod>2026-09-17T21:00:00+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8000</priority>
-   </url>
-   <url>
-        <loc>https://marstersdigital.com/web-design</loc>
-        <lastmod>2026-09-17T21:00:00+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8000</priority>
-   </url>
-   <url>
-        <loc>https://marstersdigital.com/brand-identity</loc>
-        <lastmod>2026-09-17T21:00:00+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8000</priority>
-   </url>
-   <url>
-        <loc>https://marstersdigital.com/managed-hosting</loc>
-        <lastmod>2026-09-17T21:00:00+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8000</priority>
-   </url>
-   <url>
-        <loc>https://marstersdigital.com/it-consulting</loc>
-        <lastmod>2026-09-17T21:00:00+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8000</priority>
-   </url>
-  <url>
-       <loc>https://marstersdigital.com/about</loc>
-       <lastmod>2026-08-19T08:26:15+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
+    <loc>https://www.marstersdigital.com/</loc>
+    <lastmod>2026-10-16T18:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
-       <loc>https://marstersdigital.com/portfolio</loc>
-       <lastmod>2026-09-09T13:00:00+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://www.marstersdigital.com/services</loc>
+    <lastmod>2026-10-16T18:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-       <loc>https://marstersdigital.com/contact</loc>
-       <lastmod>2026-08-19T08:26:15+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
+    <loc>https://www.marstersdigital.com/web-design</loc>
+    <lastmod>2026-10-16T18:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.marstersdigital.com/brand-identity</loc>
+    <lastmod>2026-10-16T18:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.marstersdigital.com/managed-hosting</loc>
+    <lastmod>2026-10-16T18:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.marstersdigital.com/it-consulting</loc>
+    <lastmod>2026-10-16T18:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.marstersdigital.com/portfolio</loc>
+    <lastmod>2026-10-16T18:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.marstersdigital.com/about</loc>
+    <lastmod>2026-10-16T18:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.marstersdigital.com/contact</loc>
+    <lastmod>2026-10-16T18:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
