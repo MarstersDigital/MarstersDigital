@@ -52,9 +52,9 @@
     <div class="top-announcement-container">
       <span class="announcement-badge">See It First</span>
       <span class="top-announcement-text">Get a free homepage design within 24 hours. See your new site before you pay anything.</span>
-      <a href="/#see-it-before-you-pay" class="top-announcement-btn">
+      <button type="button" class="top-announcement-btn" data-open-concept data-reference-style="Contact Announcement Bar">
         Get My Free Design &rarr;
-      </a>
+      </button>
     </div>
   </div>
 
@@ -73,7 +73,7 @@
         <a href="/services">Services</a>
         <a href="/portfolio">Portfolio</a>
         <a href="/about">About</a>
-        <a class="btn btn-primary nav-cta" href="/contact" aria-current="page">Start a Project</a>
+        <a class="btn btn-primary nav-cta" href="/contact" aria-current="page">Contact Us</a>
       </nav>
       <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -116,6 +116,34 @@
               <div><strong>Our Location</strong><span>Otley, West Yorkshire (LS21) &bull; Wharfedale</span></div>
             </div>
           </div>
+        </div>
+
+        <!-- Promo Card: Free Website Design in 24h -->
+        <div class="contact-promo-card reveal" data-delay="1">
+          <span class="contact-promo-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            See It First
+          </span>
+          <h3>Get a free website design idea <span class="gradient-text">within 24 hours</span></h3>
+          <p>Want to see what your new website could look like before spending a penny? Share your business name and Elliot will prepare a bespoke design concept &mdash; 100% free with zero obligation.</p>
+          <ul class="contact-promo-list">
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              Bespoke concept tailored to your brand
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              Delivered within 24 hours
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              Zero obligation &amp; zero payment required
+            </li>
+          </ul>
+          <button type="button" class="btn btn-primary" data-open-concept data-reference-style="Contact Page Left Column Offer" style="width: 100%; justify-content: center;">
+            Get my free design
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </button>
         </div>
 
       </div>
@@ -250,6 +278,103 @@
       </div>
     </div>
   </footer>
+
+  <!-- ===== Feature 5.2: Free Homepage Concept Intake Modal ===== -->
+  <div id="conceptModal" class="concept-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="conceptModalTitle">
+    <div class="concept-modal-backdrop"></div>
+    <div class="concept-modal-shell">
+      <div class="concept-modal-header">
+        <h2 id="conceptModalTitle">Request Your Free Homepage Design</h2>
+        <p>See your new website before you commit a penny &mdash; 100% free with zero obligation.</p>
+        <button type="button" class="concept-modal-close" aria-label="Close modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="concept-modal-body">
+        <form id="conceptForm" enctype="multipart/form-data" novalidate>
+          <input type="hidden" id="ci-referenceStyle" name="referenceStyle" value="">
+
+          <div class="field">
+            <label for="ci-name">Your Name <span class="req">*</span></label>
+            <input type="text" id="ci-name" name="name" placeholder="Elliot Marsters" autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="ci-business">Business Name <span class="req">*</span></label>
+            <input type="text" id="ci-business" name="business" placeholder="Your Company Name Ltd" autocomplete="organization" required>
+          </div>
+
+          <div class="grid-2" style="gap: 1rem;">
+            <div class="field">
+              <label for="ci-email">Email Address <span class="req">*</span></label>
+              <input type="email" id="ci-email" name="email" placeholder="you@yourcompany.co.uk" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="ci-phone">Phone / WhatsApp Number <span class="req">*</span></label>
+              <input type="tel" id="ci-phone" name="phone" placeholder="07700 900000" autocomplete="tel" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="ci-currentWebsite">Current Website URL <span style="color: var(--muted); font-weight: 400;">(optional)</span></label>
+            <input type="text" id="ci-currentWebsite" name="currentWebsite" placeholder="https:// (Leave blank if you don't have one yet)">
+          </div>
+
+          <div class="field">
+            <label for="ci-socials">Instagram &amp; Facebook Links <span style="color: var(--muted); font-weight: 400;">(Helps us match your brand style, photos &amp; tone)</span></label>
+            <textarea id="ci-socials" name="socials" rows="2" placeholder="e.g. instagram.com/yourbusiness, facebook.com/yourbusiness"></textarea>
+          </div>
+
+          <!-- Logo Drag-and-drop Zone -->
+          <div class="field">
+            <label>Upload Your Company Logo <span style="color: var(--muted); font-weight: 400;">(PNG or JPEG up to 5MB &mdash; so we can build it straight into your design)</span></label>
+            <div class="logo-dropzone" id="conceptLogoDropzone">
+              <input type="file" id="conceptLogoInput" name="logo" accept="image/png,image/jpeg,image/jpg,image/webp,image/svg+xml">
+              <div class="logo-dropzone-content">
+                <div class="logo-dropzone-icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                </div>
+                <strong>Drag and drop your logo here, or <span style="color: var(--accent-2); text-decoration: underline;">browse files</span></strong>
+                <span style="font-size: 0.78rem; color: var(--muted);">Supports high-res PNG, JPEG, SVG up to 5MB</span>
+              </div>
+            </div>
+
+            <div class="logo-preview-wrap" id="conceptLogoPreview">
+              <img id="conceptLogoThumb" class="logo-preview-thumb" src="" alt="Logo preview">
+              <div class="logo-preview-details">
+                <div id="conceptLogoName" class="logo-preview-name">logo.png</div>
+                <div id="conceptLogoSize" class="logo-preview-size">0 KB</div>
+              </div>
+              <button type="button" class="logo-remove-btn" id="conceptLogoRemove">Remove</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="ci-goals">Tell Us About Your Business &amp; Goals <span class="req">*</span></label>
+            <textarea id="ci-goals" name="message" rows="3" placeholder="What services do you offer, who are your customers, and what kind of look/feel or features would you love on your new site?" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">
+            <span class="spinner" aria-hidden="true"></span>
+            <span class="btn-label">Request My Free Homepage Design</span>
+          </button>
+
+          <p style="font-size: 0.78rem; color: var(--muted); text-align: center; margin-top: 0.75rem;">
+            100% confidential. No spam, no sales calls, and zero payment obligation.
+          </p>
+        </form>
+
+        <div id="conceptFormStatus" class="form-status" style="display: none; margin-top: 1rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+          <div>
+            <strong class="status-title"></strong><br>
+            <span class="status-text"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- ===== Feature 8: Sticky WhatsApp Action Button ===== -->
   <aside class="sticky-contact-dock" aria-label="WhatsApp Contact">
