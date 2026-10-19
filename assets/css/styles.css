@@ -1753,16 +1753,7 @@ input:focus, select:focus, textarea:focus {
   overflow-y: auto;
 }
 .reference-style-banner {
-  background: rgba(13, 148, 136, 0.08);
-  border: 1px solid rgba(13, 148, 136, 0.25);
-  border-radius: var(--radius-sm);
-  padding: 0.75rem 1rem;
-  margin-bottom: 1.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-size: 0.88rem;
-  color: var(--heading);
+  display: none !important;
 }
 
 /* Drag-and-drop Logo Zone */

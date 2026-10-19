@@ -741,16 +741,9 @@
 
     var banner = document.getElementById("conceptReferenceBanner");
     var refInput = document.getElementById("ci-referenceStyle");
-    var refText = document.getElementById("conceptReferenceText");
 
-    if (referenceStyleName) {
-      if (banner) banner.style.display = "flex";
-      if (refInput) refInput.value = referenceStyleName;
-      if (refText) refText.textContent = "Preferred style reference: " + referenceStyleName;
-    } else {
-      if (banner) banner.style.display = "none";
-      if (refInput) refInput.value = "";
-    }
+    if (banner) banner.style.display = "none";
+    if (refInput) refInput.value = referenceStyleName || "";
 
     modal.classList.add("active");
     modal.setAttribute("aria-hidden", "false");
