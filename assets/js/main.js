@@ -419,15 +419,6 @@
         track.appendChild(card);
       });
     });
-
-    // Also attach to any static portfolio cards on portfolio.html
-    document.querySelectorAll("[data-open-preview]").forEach(function (btn) {
-      btn.addEventListener("click", function (e) {
-        e.preventDefault();
-        var id = btn.getAttribute("data-open-preview");
-        if (id) openPreviewModal(id);
-      });
-    });
   }
 
   /* ============================================================
@@ -486,6 +477,30 @@
         openConceptModal(refName);
       });
     }
+
+    // Global listener for all [data-open-preview] triggers across pages (portfolio cards, preview links)
+    document.addEventListener("click", function (e) {
+      if (e.target.closest("a[target='_blank'], [data-open-concept], .portfolio-link")) {
+        return;
+      }
+      var trigger = e.target.closest("[data-open-preview]");
+      if (trigger) {
+        e.preventDefault();
+        var id = trigger.getAttribute("data-open-preview");
+        if (id) openPreviewModal(id);
+      }
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") {
+        var trigger = e.target.closest("[data-open-preview]");
+        if (trigger) {
+          e.preventDefault();
+          var id = trigger.getAttribute("data-open-preview");
+          if (id) openPreviewModal(id);
+        }
+      }
+    });
   }
 
   function openPreviewModal(projectId) {
