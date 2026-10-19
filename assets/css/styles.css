@@ -1525,19 +1525,12 @@ input:focus, select:focus, textarea:focus {
   gap: 0.5rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
-.browser-window-status {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-size: 0.75rem;
-  color: #2DD4BF;
-  font-weight: 500;
+.browser-window-topbar::after {
+  content: "";
+  width: 45px;
 }
-.browser-window-status .status-indicator {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #10B981;
+.browser-window-status {
+  display: none !important;
 }
 .browser-window-scrollpane {
   flex: 1;
