@@ -197,11 +197,11 @@ h3 { font-size: 1.25rem; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 96px;
+  height: 74px;
 }
 
 .brand { display: flex; align-items: center; gap: 0.8rem; }
-.brand img { height: 63px; width: auto; }
+.brand img { height: 48px; width: auto; }
 .brand-name {
   font-weight: 700;
   color: #1E3A5F;
@@ -233,8 +233,8 @@ h3 { font-size: 1.25rem; }
 
 .nav-links .nav-cta {
   margin-left: 0.75rem;
-  padding: 0.85rem 2.2rem;
-  font-size: 0.95rem;
+  padding: 0.65rem 1.85rem;
+  font-size: 0.92rem;
   white-space: nowrap;
 }
 
@@ -1009,7 +1009,7 @@ input:focus, select:focus, textarea:focus {
   .nav-toggle { display: grid; place-items: center; }
   .nav-links {
     position: fixed;
-    inset: 96px 0 auto 0;
+    inset: 74px 0 auto 0;
     flex-direction: column;
     align-items: flex-start;
     gap: 0.25rem;
