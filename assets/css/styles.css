@@ -354,6 +354,7 @@ h3 { font-size: 1.25rem; }
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 0.2rem;
 }
 
 .founder-name {
@@ -365,7 +366,7 @@ h3 { font-size: 1.25rem; }
 }
 
 .founder-role {
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   font-weight: 600;
   color: var(--accent-1);
   letter-spacing: -0.01em;
