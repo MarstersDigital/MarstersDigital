@@ -263,7 +263,7 @@ h3 { font-size: 1.25rem; }
 }
 
 .hero-text-col {
-  transform: translateY(-28px);
+  transform: translateY(-56px);
 }
 
 .hero h1 { margin: 0.5rem 0 1.5rem; }
@@ -317,17 +317,17 @@ h3 { font-size: 1.25rem; }
 /* Hero founder floating badge */
 .hero-founder-badge {
   position: absolute;
-  bottom: 16px;
-  left: -15px;
+  bottom: 68px;
+  left: -20px;
   display: flex;
   align-items: center;
-  gap: 0.85rem;
+  gap: 0.95rem;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.95);
   box-shadow: 0 16px 36px -4px rgba(15, 23, 42, 0.16), 0 4px 14px -2px rgba(15, 23, 42, 0.08);
-  padding: 0.35rem 1.35rem 0.35rem 0.35rem;
+  padding: 0.4rem 1.45rem 0.4rem 0.4rem;
   border-radius: 9999px;
   z-index: 10;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -339,14 +339,14 @@ h3 { font-size: 1.25rem; }
 }
 
 .founder-avatar {
-  width: 68px;
-  height: 68px;
+  width: 88px;
+  height: 88px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
   flex-shrink: 0;
-  border: 2.5px solid #FFFFFF;
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12);
+  border: 3px solid #FFFFFF;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.14);
   display: block;
 }
 
@@ -358,24 +358,24 @@ h3 { font-size: 1.25rem; }
 
 .founder-name {
   font-weight: 700;
-  font-size: 1.02rem;
+  font-size: 1.08rem;
   color: var(--heading);
   letter-spacing: -0.015em;
   white-space: nowrap;
 }
 
 .founder-role {
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 600;
   color: var(--accent-1);
   letter-spacing: -0.01em;
 }
 
 .founder-subtext {
-  font-size: 0.72rem;
+  font-size: 0.74rem;
   color: var(--muted);
-  line-height: 1.3;
-  margin-top: 1px;
+  line-height: 1.35;
+  margin-top: 2px;
   display: block;
   white-space: nowrap;
 }
@@ -986,6 +986,15 @@ input:focus, select:focus, textarea:focus {
 @media (max-width: 1024px) {
   .hero-grid, .why-grid, .contact-layout { grid-template-columns: 1fr; gap: 2.5rem; }
   .hero-text-col { transform: none; }
+  .hero-founder-badge {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin: 1.5rem auto 0;
+    width: fit-content;
+    max-width: 95%;
+  }
+  .founder-subtext { white-space: normal; }
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .process { grid-template-columns: repeat(2, 1fr); }
@@ -1123,7 +1132,7 @@ input:focus, select:focus, textarea:focus {
   align-items: center;
   justify-content: center;
   transform-style: preserve-3d;
-  transform: translateY(-68px);
+  transform: translateY(-98px);
 }
 .hero-globe-sphere {
   position: relative;
@@ -1192,11 +1201,19 @@ input:focus, select:focus, textarea:focus {
     width: fit-content;
     max-width: 95%;
   }
+  .founder-avatar {
+    width: 72px;
+    height: 72px;
+  }
 }
 @media (max-width: 480px) {
   .hero-globe-wrap {
     max-width: 310px;
     min-height: 310px;
+  }
+  .founder-avatar {
+    width: 64px;
+    height: 64px;
   }
   .globe-tile {
     width: 128px;
