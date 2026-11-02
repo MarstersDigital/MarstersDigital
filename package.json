@@ -4,9 +4,11 @@
   "private": true,
   "description": "Marsters Digital — static marketing site",
   "scripts": {
-    "build": "node scripts/build.mjs"
+    "generate:thumbnails": "node scripts/generate-thumbnails.mjs",
+    "build": "node scripts/generate-thumbnails.mjs && node scripts/build.mjs"
   },
   "devDependencies": {
+    "sharp": "^0.35.5",
     "wrangler": "^4.0.0"
   }
 }

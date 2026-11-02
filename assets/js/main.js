@@ -30,9 +30,11 @@
       name: "Harrogate Jagwar Specialists",
       industry: "Jaguar & Land Rover Specialist • Harrogate",
       description: "Premium workshop website with custom service menus, instant booking, and mobile-optimised conversion paths.",
-      heroImg: "assets/portfolio/harrogatejagwar.co.uk-hero.png",
-      fullImg: "assets/portfolio/harrogatejagwar.co.uk-full.png",
-      mobileImg: "assets/portfolio/harrogatejagwar.co.uk-mobile.png",
+      heroImg: "assets/portfolio/harrogatejagwar.co.uk-thumb.webp",
+      thumbImg: "assets/portfolio/harrogatejagwar.co.uk-thumb.webp",
+      globeImg: "assets/portfolio/harrogatejagwar.co.uk-globe.webp",
+      fullImg: "assets/portfolio/harrogatejagwar.co.uk-full.webp",
+      mobileImg: "assets/portfolio/harrogatejagwar.co.uk-mobile.webp",
       liveUrl: "https://harrogatejagwar.co.uk",
       displayUrl: "https://harrogatejagwar.co.uk",
       tags: ["Custom Design", "Super-Fast Mobile", "Google Friendly", "Live Client"]
@@ -42,9 +44,11 @@
       name: "Ellavate Dogs",
       industry: "Canine Training & Behaviour • Newcastle",
       description: "Modern, welcoming website built for a premier dog trainer. Clean service packages and seamless mobile enquiry flows.",
-      heroImg: "assets/portfolio/ellavatedogs.com-hero.png",
-      fullImg: "assets/portfolio/ellavatedogs.com-full.png",
-      mobileImg: "assets/portfolio/ellavatedogs.com-mobile.png",
+      heroImg: "assets/portfolio/ellavatedogs.com-thumb.webp",
+      thumbImg: "assets/portfolio/ellavatedogs.com-thumb.webp",
+      globeImg: "assets/portfolio/ellavatedogs.com-globe.webp",
+      fullImg: "assets/portfolio/ellavatedogs.com-full.webp",
+      mobileImg: "assets/portfolio/ellavatedogs.com-mobile.webp",
       liveUrl: "https://ellavatedogs.com",
       displayUrl: "https://ellavatedogs.com",
       tags: ["Custom Design", "Clean & Easy to Browse", "Simple Enquiries", "Live Client"]
@@ -54,9 +58,11 @@
       name: "Established Home Improvements",
       industry: "Windows, Doors & Living Spaces • Yorkshire",
       description: "Clean architectural portfolio showcase with before & after gallery, instant quote funnels, and high-trust accreditation badges.",
-      heroImg: "assets/portfolio/established-home-improvements-hero.png",
-      fullImg: "assets/portfolio/established-home-improvements-full.png",
-      mobileImg: "assets/portfolio/Established-Home-Improvements-mobile.png",
+      heroImg: "assets/portfolio/established-home-improvements-thumb.webp",
+      thumbImg: "assets/portfolio/established-home-improvements-thumb.webp",
+      globeImg: "assets/portfolio/established-home-improvements-globe.webp",
+      fullImg: "assets/portfolio/established-home-improvements-full.webp",
+      mobileImg: "assets/portfolio/established-home-improvements-mobile.webp",
       liveUrl: null,
       displayUrl: "https://establishedhomeimprovements.co.uk (Design)",
       tags: ["High-Converting Quotes", "Project Gallery", "Mobile First"]
@@ -66,9 +72,11 @@
       name: "Fliss & Ivy Floral Design",
       industry: "Bespoke Floristry & Botanical Styling • Yorkshire",
       description: "Editorial-grade floral studio design showcasing wedding installations, seasonal collections, and bespoke booking funnels.",
-      heroImg: "assets/portfolio/fliss-&-ivy-hero.png",
-      fullImg: "assets/portfolio/fliss-&-ivy-full.png",
-      mobileImg: "assets/portfolio/fliss-&-ivy-mobile.png",
+      heroImg: "assets/portfolio/fliss-&-ivy-thumb.webp",
+      thumbImg: "assets/portfolio/fliss-&-ivy-thumb.webp",
+      globeImg: "assets/portfolio/fliss-&-ivy-globe.webp",
+      fullImg: "assets/portfolio/fliss-&-ivy-full.webp",
+      mobileImg: "assets/portfolio/fliss-&-ivy-mobile.webp",
       liveUrl: null,
       displayUrl: "https://flissandivy.co.uk (Design)",
       tags: ["Editorial Aesthetic", "Wedding Booking Funnel", "High Res Media"]
@@ -78,9 +86,11 @@
       name: "Halo Hair Design",
       industry: "Hair Salon & Creative Colour Studio • Yorkshire",
       description: "Chic, minimalist boutique salon experience featuring stylist portfolios, clear service menus, and integrated appointment requests.",
-      heroImg: "assets/portfolio/halo-hair-design-hero.png",
-      fullImg: "assets/portfolio/halo-hair-design-full.png",
-      mobileImg: "assets/portfolio/halo-hair-design-mobile.png",
+      heroImg: "assets/portfolio/halo-hair-design-thumb.webp",
+      thumbImg: "assets/portfolio/halo-hair-design-thumb.webp",
+      globeImg: "assets/portfolio/halo-hair-design-globe.webp",
+      fullImg: "assets/portfolio/halo-hair-design-full.webp",
+      mobileImg: "assets/portfolio/halo-hair-design-mobile.webp",
       liveUrl: null,
       displayUrl: "https://halohairdesign.co.uk (Design)",
       tags: ["Boutique Aesthetic", "Service Menu", "Fast Booking"]
@@ -90,9 +100,11 @@
       name: "Skyrise Contractors Ltd",
       industry: "Commercial Roofing & Industrial Cladding • UK",
       description: "Industrial-strength contracting website built to convert commercial tenders, featuring case studies and fast RFQ forms.",
-      heroImg: "assets/portfolio/skyrise-contractors-hero.png",
-      fullImg: "assets/portfolio/skyrise-contractors-full.png",
-      mobileImg: "assets/portfolio/skyrise-contractors-mobile.png",
+      heroImg: "assets/portfolio/skyrise-contractors-thumb.webp",
+      thumbImg: "assets/portfolio/skyrise-contractors-thumb.webp",
+      globeImg: "assets/portfolio/skyrise-contractors-globe.webp",
+      fullImg: "assets/portfolio/skyrise-contractors-full.webp",
+      mobileImg: "assets/portfolio/skyrise-contractors-mobile.webp",
       liveUrl: null,
       displayUrl: "https://skyrisecontractors.co.uk (Design)",
       tags: ["Commercial Tender Ready", "Safety Accreditations", "Instant RFQ"]
@@ -102,9 +114,11 @@
       name: "The Eden Pack",
       industry: "Countryside Pack Adventures & Pet Photography • London",
       description: "Exclusive canine sanctuary website showcasing structured countryside pack adventures, intentional pet care, and timeless pet photography.",
-      heroImg: "assets/portfolio/the-eden-pack-hero.png",
-      fullImg: "assets/portfolio/the-eden-pack-full.png",
-      mobileImg: "assets/portfolio/the-eden-pack-mobile.png",
+      heroImg: "assets/portfolio/the-eden-pack-thumb.webp",
+      thumbImg: "assets/portfolio/the-eden-pack-thumb.webp",
+      globeImg: "assets/portfolio/the-eden-pack-globe.webp",
+      fullImg: "assets/portfolio/the-eden-pack-full.webp",
+      mobileImg: "assets/portfolio/the-eden-pack-mobile.webp",
       liveUrl: null,
       displayUrl: "https://theedenpack.co.uk (Design)",
       tags: ["Pack Adventures", "Pet Photography", "Canine Sanctuary"]
@@ -114,9 +128,11 @@
       name: "The Hive Property Group",
       industry: "Bespoke Kitchens & Luxury Bathrooms • Harrogate",
       description: "High-end residential renovation showcase featuring bespoke kitchen design, luxury wet rooms, before/after project sliders, and instant quote funnels.",
-      heroImg: "assets/portfolio/the-hive-property-group-hero.png",
-      fullImg: "assets/portfolio/the-hive-property-group-full.png",
-      mobileImg: "assets/portfolio/the-hive-property-group-mobile.png",
+      heroImg: "assets/portfolio/the-hive-property-group-thumb.webp",
+      thumbImg: "assets/portfolio/the-hive-property-group-thumb.webp",
+      globeImg: "assets/portfolio/the-hive-property-group-globe.webp",
+      fullImg: "assets/portfolio/the-hive-property-group-full.webp",
+      mobileImg: "assets/portfolio/the-hive-property-group-mobile.webp",
       liveUrl: null,
       displayUrl: "https://thehivepropertygroup.co.uk (Design)",
       tags: ["Bespoke Kitchens", "Luxury Bathrooms", "Transformation Sliders"]
@@ -243,9 +259,12 @@
       tileEl.style.transform = "rotateY(" + coord.az + "deg) rotateX(" + (-coord.el) + "deg) translateZ(" + radius + "px)";
 
       var img = document.createElement("img");
-      img.src = item.heroImg;
+      img.src = item.globeImg || item.thumbImg || item.heroImg;
       img.alt = item.name + " preview";
+      img.width = 400;
+      img.height = 300;
       img.loading = "eager";
+      img.decoding = "async";
       tileEl.appendChild(img);
 
       sphere.appendChild(tileEl);
@@ -397,7 +416,7 @@
         card.setAttribute("aria-label", "Explore " + item.name + " full page");
 
         card.innerHTML =
-          '<img src="' + item.heroImg + '" alt="' + item.name + ' website thumbnail" loading="lazy">' +
+          '<img src="' + (item.thumbImg || item.heroImg) + '" alt="' + item.name + ' website thumbnail" width="800" height="600" loading="lazy" decoding="async">' +
           '<div class="marquee-card-overlay">' +
             '<span class="marquee-pill">' +
               '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>' +
