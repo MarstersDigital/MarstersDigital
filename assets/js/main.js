@@ -19,6 +19,16 @@
   };
 
   /**
+   * Sends a GA4 event via gtag.js when available.
+   * Fires to all configured GA4 properties (G-VMPB6E4BXY & G-70GM109PGN).
+   */
+  function trackAnalyticsEvent(eventName, params) {
+    if (typeof window.gtag === "function") {
+      window.gtag("event", eventName, params || {});
+    }
+  }
+
+  /**
    * Centralised 8-Item Portfolio Array (Strictly 8 genuine project examples — no duplicates)
    * CRITICAL BUSINESS RULE:
    * Only Harrogate Jagwar Specialists and Ellavate Dogs may display liveUrl.
@@ -739,6 +749,15 @@
           var result = await response.json().catch(function () { return { ok: false }; });
 
           if (response.ok && result.ok) {
+            var refInput = document.getElementById("ci-referenceStyle");
+            trackAnalyticsEvent("generate_lead", {
+              form_id: "conceptForm",
+              form_name: "Request Your Free Homepage Design",
+              form_type: "free-concept",
+              reference_style: (refInput && refInput.value) || "none",
+              has_logo: Boolean(fileInput && fileInput.files && fileInput.files.length > 0),
+              page_path: window.location.pathname
+            });
             form.style.display = "none";
             showStatus("success", "Homepage Design Request Received!", "Thank you " + nameInput.value.trim() + "! Elliot will review your brand details and begin preparing your bespoke homepage design. We'll be in touch within 24 hours.");
           } else {
@@ -913,6 +932,14 @@
         var result = await response.json().catch(function () { return { ok: false }; });
 
         if (response.ok && result.ok) {
+          trackAnalyticsEvent("generate_lead", {
+            form_id: "contactForm",
+            form_name: "Contact Enquiry",
+            form_type: "contact",
+            services_selected: selectedServices().join(", ") || "none",
+            timeline: timeline ? timeline.value : "Flexible",
+            page_path: window.location.pathname
+          });
           submitBtn.classList.remove("loading");
           showStatus("success", "Enquiry Received!", "Thanks " + name.value.trim() + "! Your message was sent directly to Elliot. We'll reply within 24 hours with transparent advice and a clear quote.");
           form.reset();
@@ -970,6 +997,21 @@
     if (whatsappBtn) {
       whatsappBtn.href = "https://wa.me/" + WHATSAPP_NUMBER;
     }
+
+    document.querySelectorAll('a[href*="wa.me/"], #dockWhatsappBtn').forEach(function (link) {
+      link.addEventListener("click", function () {
+        var location = link.id === "dockWhatsappBtn"
+          ? "sticky_dock"
+          : (link.closest("footer") ? "footer" : "page_content");
+        trackAnalyticsEvent("whatsapp_click", {
+          link_id: link.id || "whatsapp_link",
+          link_location: location,
+          link_url: link.href,
+          page_path: window.location.pathname,
+          transport_type: "beacon"
+        });
+      });
+    });
 
     if (emailBtn) {
       emailBtn.addEventListener("click", function (e) {
