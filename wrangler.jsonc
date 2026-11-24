@@ -2,6 +2,7 @@
   "name": "marstersdigital",
   "main": "src/worker.js",
   "compatibility_date": "2026-08-18",
+  "keep_vars": true,
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",
