@@ -22,8 +22,7 @@ const ITEMS = [
   "robots.txt",
   "_redirects",
   "assets",
-  "Images",
-  "functions"
+  "Images"
 ];
 
 try {

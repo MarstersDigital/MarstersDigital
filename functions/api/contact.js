@@ -54,7 +54,7 @@ export async function onRequestPost(context) {
 
     // Honeypot check (hidden website field for spam bots)
     // Note: For concept form, current website is named "currentWebsite" to avoid honeypot trigger
-    if (data.website && !data.formType) {
+    if (data.website && data.formType !== 'free-concept') {
       // Spam detected via honeypot
       return new Response(JSON.stringify({ ok: true, spam: true }), {
         status: 200,
@@ -231,15 +231,13 @@ export async function onRequestPost(context) {
     // Check Resend API Key
     const apiKey = env && env.RESEND_API_KEY;
     if (!apiKey) {
-      console.warn('RESEND_API_KEY environment variable is not configured. Email payload logged to console.');
-      console.log('Submission:', { formType, name, business, email, phone, currentWebsite, socials, message });
+      console.error('RESEND_API_KEY environment variable is not configured.');
       return new Response(
         JSON.stringify({
-          ok: true,
-          devMode: true,
-          message: 'Enquiry received successfully (demo/development mode active).',
+          ok: false,
+          error: 'Email service is not configured on the server (missing RESEND_API_KEY).',
         }),
-        { status: 200, headers: { 'Content-Type': 'application/json' } }
+        { status: 500, headers: { 'Content-Type': 'application/json' } }
       );
     }
 

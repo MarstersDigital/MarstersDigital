@@ -1,7 +1,10 @@
 {
   "name": "marstersdigital",
+  "main": "src/worker.js",
   "compatibility_date": "2026-08-18",
   "assets": {
-    "directory": "./dist"
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
   }
 }
